@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Page Views by Page Title",
+        "type" :"report",
+        "dimensions" : [
+            {
+                "dimension":"pageTitle"
+            }
+
+        ],
+        "metrics": [
+            {
+                "metric":"screenPageViews"
+            }
+        ]
+    },
+    {
+        "name": "Real time events counts by eventName",
+        "type" : "realtime",
+        "dimensions" : [
+            {
+                "dimension": "eventName"
+            }
+        ],
+        "metrics": [
+            {
+                "metric":"eventCount"
+            }
+        ]
+    },
+    {
+        "name": "Real time views by page",
+        "type" : "realtime",
+        "dimensions" : [
+            {
+                "dimension": "unifiedScreenName"
+            }
+        ],
+        "metrics": [
+            {
+                "metric":"screenPageViews"
+            }
+        ]
+    }
+]
